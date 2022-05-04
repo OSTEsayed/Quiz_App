@@ -2,57 +2,70 @@
     box-sizing: border-box;
 }
 body{
+    margin:0;
+    padding: 0;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content:center;
     background-color: aliceblue;
-    transition: .3s;
     width: 100vw;
+    max-width: 100vw;
     height: 100vh;
 }
 .Win{
-    background:  linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral),-moz-linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral);
-animation: winer 1s infinite ease-in-out;
+    background:  linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: -moz-linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    animation: winer 1s infinite ease-in-out;
 }
 @keyframes winer {
     0%{    
-    background:  linear-gradient(0deg,lightgreen ,lightblue ,lightgreen,lightcoral),-moz-linear-gradient(0deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:  linear-gradient(0deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(0deg,lightgreen ,lightblue ,lightgreen,lightcoral);
     }
 10%{    
-    background:  linear-gradient(30deg,lightgreen ,lightblue ,lightgreen,lightcoral),-moz-linear-gradient(30deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:  linear-gradient(30deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(30deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 25%{    
-    background:  linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral),-moz-linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:  linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(45deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 40%{    
-    background: linear-gradient(80deg,lightgreen ,lightblue ,lightgreen,lightcoral), -moz-linear-gradient(80deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: linear-gradient(80deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: -moz-linear-gradient(80deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 55%{    
-    background:  linear-gradient(100deg,lightgreen ,lightblue ,lightgreen,lightcoral),-moz-linear-gradient(100deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:  linear-gradient(100deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(100deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 65%{    
-    background: linear-gradient(140deg,lightgreen ,lightblue ,lightgreen,lightcoral), -moz-linear-gradient(140deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: linear-gradient(140deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(140deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 75%{    
-    background: linear-gradient(160deg,lightgreen ,lightblue ,lightgreen,lightcoral), -moz-linear-gradient(160deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: linear-gradient(160deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(160deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 80%{    
-    background: linear-gradient(200deg,lightgreen ,lightblue ,lightgreen,lightcoral), -moz-linear-gradient(200deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: linear-gradient(200deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(200deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 90%{    
-    background: linear-gradient(240deg,lightgreen ,lightblue ,lightgreen,lightcoral), -moz-linear-gradient(240deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: linear-gradient(240deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background: -moz-linear-gradient(240deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 100%{
-    background:  linear-gradient(290deg,lightgreen ,lightblue ,lightgreen,lightcoral),-moz-linear-gradient(290deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:  linear-gradient(290deg,lightgreen ,lightblue ,lightgreen,lightcoral);
+    background:-moz-linear-gradient(290deg,lightgreen ,lightblue ,lightgreen,lightcoral);
 
 }
 }
@@ -74,7 +87,19 @@ animation: winer 1s infinite ease-in-out;
     background-color: lightblue;
     padding: 15px;
     border: 1px  black;
-    box-shadow: 3px 3px 3px 9px rgba(5, 176, 255, 0.329);
+    box-shadow: 1px 1px 1px 6px rgba(5, 176, 255, 0.329);
+}
+.ch1{
+    grid-area:choic1 ;
+}
+.ch2{
+    grid-area:choic2 ;
+}
+.ch3{
+    grid-area:choic3 ;
+}
+.ch4{
+    grid-area:choic4 ;
 }
 .Question{
     margin: auto;
@@ -89,6 +114,7 @@ font-size: 1.6em;
     border: 1px solid black;
     border-radius: 30px;
     margin: 10px;
+    min-height: 40px;
 }
 .choices:hover{
     /* border:2px solid black; */
@@ -102,7 +128,8 @@ font-size: 1.6em;
     border: none;
     /* background-color:linear-gradient(45deg, blue, red); */
    
-    background: linear-gradient(45deg,lightgreen 50%,lightcoral 50%),-moz-linear-gradient(45deg,lightgreen 50%,lightcoral 50%);
+    background: linear-gradient(45deg,lightgreen 50%,lightcoral 50%);
+    background:-moz-linear-gradient(45deg,lightgreen 50%,lightcoral 50%);
 }
 .start:hover,.next:hover{
     border:1px solid black
@@ -119,7 +146,8 @@ font-size: 1.6em;
     width: 160%;
     border-radius: 30px;
     border: 1px solid black;
-    background:linear-gradient(0,rgba(0,0,0,.2) 0%,transparent 00%), -moz-linear-gradient(0,rgba(0,0,0,.2) 0%,transparent 00%);
+    background:linear-gradient(90deg,rgba(0,0,0,.2) 0%,transparent 00%);
+    background: -moz-linear-gradient(0,rgba(0,0,0,.2) 0%,transparent 00%);
 }
 .score{
     display: none;
@@ -129,4 +157,48 @@ font-size: 1.6em;
     text-align: right;
     align-items: center;
     margin-left: 60%;
+}
+
+
+@media (max-width:600px) {
+    .quiz{
+        display: grid;
+        grid-template-areas: 
+        "quast quast"
+        "choic1 choic2"
+        "choic3 choic4"
+        "start start"
+        "time score"
+        ;
+        min-width:80vw;
+        max-width:90vw;
+        margin: auto;
+        min-height: 300px;
+        border-radius: 10px;
+        background-color: lightblue;
+        padding: auto;
+    }
+    
+}
+
+@media (max-width:425px) {
+    .quiz{
+        display: grid;
+        grid-template-areas: 
+        "quast quast"
+        "choic1 choic1"
+        "choic2 choic2"
+        "choic3 choic3"
+        "choic4 choic4"
+        "start start"
+        "time score"        ;
+        min-width:80vw;
+        max-width:90vw;
+        margin: auto;
+        min-height: 300px;
+        border-radius: 10px;
+        background-color: lightblue;
+        padding: auto;
+    }
+    
 }
