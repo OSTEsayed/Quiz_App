@@ -39,7 +39,7 @@ function timing(){
           clock_S=time_left%60;
           clock_lab.innerHTML=clock_M.toString()+":"+clock_S.toString();
           timing_lab.style.display="block";
-          timing_lab.style.background="-webkit-linear-gradient(0,rgba(0,0,0,.2) "+transp+"%,transparent 00%),-moz-linear-gradient(0,rgba(0,0,0,.2) "+transp+"%,transparent 00%)";
+          timing_lab.style.background="linear-gradient(0,rgba(0,0,0,.2) "+transp+"%,transparent 00%),-moz-linear-gradient(0,rgba(0,0,0,.2) "+transp+"%,transparent 00%)";
           time_left=time_left-1;
      }
 }
